@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src = "https://code.jquery.com/jquery-3.2.1.min.js">
+        </script>
+        <script>
+        $(function(){
+            var includes = $('[data-include]')
+            $.each(inludes, function(){
+                var file = 'bits/' + $(this).data('include') + '.html'
+                $(this).load(file)
+            })
+        });
+        </script>
     </head>
     <body>
+        <div data-linclude="header"></div>
     </body>
 </html>
 
