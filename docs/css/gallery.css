@@ -7,11 +7,12 @@
     color:      #DDAAFF;
     padding: 0px;
     width: 25%;
-    font-size: 16px;
+    font-size: 20px;
     display: flex;
     flex-flow: column wrap;
 }
-#left-pane a{
+#left-pane a,
+#left-pane h2{
     margin: 5%;
 }
 #picture-description{
@@ -38,6 +39,12 @@
 }
 #picture-controls-pane{
     height: 10%;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+#picture-controls-pane button{
+    width: 50%;
 }
 
 #right-pane{
@@ -51,7 +58,6 @@
 .preview-item{
     height:10%;
     max-height:10%;
-    border: 1px solid #303030;
 }
 .preview-item a{
     margin: 5%;

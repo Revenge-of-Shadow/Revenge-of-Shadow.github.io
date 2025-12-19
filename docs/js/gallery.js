@@ -1,3 +1,7 @@
+//  Oh, I will find a way to make a pseudodynamic page.
+var count = 1;
+var index = count-1;
+
 $(document).ready(function(){
     $("#bt-pic-bg").click(function(){
         $("#bt-pic-bg").text(function(i, origText){
@@ -18,4 +22,24 @@ $(document).ready(function(){
             return "Background: "+origText;
         });
     });
+    $("#bt-prev").click(function(){
+        (index > 0)? index-- : index = count-1;
+        document.location.hash = index;
+    });
+    $("#bt-next").click(function(){
+        (index < count-1)? index++ : index = 0;
+        document.location.hash = index;
+    });
+
+    window.onhashchange = function(){
+        //$("#picture-description").load("/bits/gallery/"+index+".html");
+        fetch("/bits/gallery/"+index+".html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("description-text").innerHTML = data;
+        });
+        document.getElementById("picture").src ="/images/gallery/"+index+".png";
+    }
+    document.location.hash=index;
+    window.onhashchange();
 });
