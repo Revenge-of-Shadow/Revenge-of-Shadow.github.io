@@ -1,0 +1,23 @@
+#header{
+    flex: 0 1 auto;
+    /*  flex-grow flex-shrink flex-basis*/
+    text-align: center;
+    background: #222222;
+    font-size: 24px;
+
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #303030;
+}
+#header div{
+    padding: 1%;
+    flex: 0 1 calc(20%);
+    border: 1px solid #303030;
+}
+#header div a{
+    color:      #DD66FF;
+}
