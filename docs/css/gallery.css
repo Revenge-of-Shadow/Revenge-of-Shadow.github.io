@@ -1,0 +1,32 @@
+#panes{
+    display: flex;
+    flex-flow: column;
+    height:100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+
+    align-items: center;
+    justify-content: center;
+
+}
+#left-pane{
+    background: #202020;
+    padding: 0px;
+    width: 25%;
+    height:100%;
+}
+#center-pane{
+    background: #181818;
+    padding: 0px;
+    width: 50%;
+    height: 100%
+}
+#right-pane{
+    background: #222222;
+    padding: 0px;
+    max-width: 25%;
+    width: 25%;
+    height: 100%
+}

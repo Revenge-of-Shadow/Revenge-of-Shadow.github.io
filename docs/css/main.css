@@ -1,4 +1,6 @@
+html,
 body{
+    height: 100%;
     margin: 0px;
     padding: 0px;
     background: #282828;
@@ -8,8 +10,17 @@ a{
     text-decoration: none;
 }
 
-.header{
-    width: 100%;
+#main-wrapper{
+    display:flex;
+    flex-flow: column;
+    height: 100%;
+}
+#main-wrapper .row{
+    border: 1px solid #303030;
+}
+#main-wrapper .row#header{
+    flex: 0 1 auto;
+    /*  flex-grow flex-shrink flex-basis*/
     text-align: center;
     background: #222222;
     font-size: 24px;
@@ -21,12 +32,17 @@ a{
     align-items: center;
     justify-content: center;
 }
-.header div{
+#main-wrapper .row#header div{
     padding: 1%;
     flex: 0 1 calc(20%);
     border: 1px solid #303030;
-
 }
-.header div a{
+#main-wrapper .row#header div a{
     color:      #DD66FF;
+}
+#main-wrapper .row.content{
+    flex: 1 1 auto;
+}
+.flex-column{
+    flex: 1 1 auto;
 }
