@@ -1,22 +1,32 @@
 body{
     margin: 0px;
     padding: 0px;
-    width: 100%;
     background: #282828;
-    color:      #FDFDFD;
-}
-.header{
-    padding: 10px;
-    text-align: center;
-    background: #222222;
-    color: white;
-    font-size: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-.header div a{
-    color: white;
+    font-family: Monospace;
 }
 a{
     text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    text-align: center;
+    background: #222222;
+    font-size: 24px;
+
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+
+    align-items: center;
+    justify-content: center;
+}
+.header div{
+    padding: 1%;
+    flex: 0 1 calc(20%);
+    border: 1px solid #303030;
+
+}
+.header div a{
+    color:      #DD66FF;
 }
