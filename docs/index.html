@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src = "https://code.jquery.com/jquery-3.2.1.min.js">
-        </script>
-        <script>
-        $(function(){
-            var includes = $('[data-include]')
-            $.each(includes, function(){
-                var file = 'bits/' + $(this).data('include') + '.html'
-                $(this).load(file)
-            })
-        });
-        </script>
+        <script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src = "js/common"></script>
         <link rel="stylesheet" href="css/main.css">
         <meta http-equiv="refresh" content="0; url=pages/main.html"/>
-        <script type="text/javascript">
+        <script>
             window.location.href = "pages/main.html"
         </script>
         <title>Redirecting to main page</title>
     </head>
     <body>
-        <p style="text-align:center;"><a href="pages/main.html">Redirect</a></p>
+        <p style="text-align:center;"><a href="pages/gallery.html">Redirect</a></p>
     </body>
 </html>
 

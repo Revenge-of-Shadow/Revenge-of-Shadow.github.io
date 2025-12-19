@@ -1,7 +1,22 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background: #282828;
+    color:      #FDFDFD;
+}
 .header{
     padding: 10px;
     text-align: center;
     background: #222222;
     color: white;
     font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.header div a{
+    color: white;
+}
+a{
+    text-decoration: none;
 }
