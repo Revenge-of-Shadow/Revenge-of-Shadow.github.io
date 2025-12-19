@@ -2,7 +2,6 @@
     flex: 0 1 auto;
     /*  flex-grow flex-shrink flex-basis*/
     text-align: center;
-    background: #222222;
     font-size: 24px;
 
     display: flex;
@@ -11,15 +10,10 @@
 
     align-items: center;
     justify-content: center;
-    border: 1px solid #303030;
 }
 #header div{
     padding: 1%;
     flex: 0 1 20%;
-    border: 1px solid #303030;
     max-width: 98%;
     max-height: 98%;
-}
-#header div a{
-    color:      #DD66FF;
 }

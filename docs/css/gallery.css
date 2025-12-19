@@ -4,10 +4,6 @@
     min-height: 0;
 }
 #left-pane{
-    background: #202020;
-    color:      #DDAAFF;
-    padding: 0;
-    margin: 0;
     font-size: 20px;
     display: grid;
     height:100%;
@@ -22,47 +18,31 @@
     height:100%;
 }
 #picture-settings{
-    padding: 0;
-    margin: 0;
 }
 #center-pane{
-    background: #181818;
-    padding: 0;
-    margin: 0;
     display: grid;
     grid-template-rows: 90% 10%;
     min-height: 0;
 }
 #picture-pane{
-    padding: 0;
-    margin: 0;
 }
 #picture-pane img{
     max-width: 100%;
     max-height:100%;
-    padding: 0;
     margin-left:auto;
     margin-right:auto;
     display:block;
     float: center;
 }
 #picture-controls-pane{
-    padding: 0;
-    margin: 0;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 25% 50% 25%;
     min-width: 0;
 }
 #picture-controls-pane button{
-    padding: 0;
-    margin: 0;
 }
 
 #right-pane{
-    background: #222222;
-    color:      #DDAAFF;
-    padding: 0;
-    margin: 0;
     font-size: 14px;
     max-height:100%;
 }

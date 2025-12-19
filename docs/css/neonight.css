@@ -1,0 +1,40 @@
+/*  Not sorry if anyone copyrighted this name. */
+body{
+    background: #282828;
+    color:      #DD66FF;
+    font-family: Monospace;
+}
+button{
+    background: #242424;
+    color:      #DD66FF;
+    font-family: Monospace;
+}
+
+#header{
+    background: #222222;
+    border: 1px solid #303030;
+}
+#header div{
+    border: 1px solid #303030;
+}
+#header div a{
+    color:      #DD66FF;
+}
+
+#left-pane{
+    background: #202020;
+}
+#left-pane h2{
+    color:      #DD66FF;
+}
+#left-pane a{
+    color:      #DDAAFF;
+}
+#center-pane{
+    background: #181818;
+}
+#right-pane{
+    background: #222222;
+    color:      #DDAAFF;
+}
+
