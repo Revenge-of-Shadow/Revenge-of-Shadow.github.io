@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src = "https://code.jquery.com/jquery-3.2.1.min.js">
-        </script>
-        <script src = "/js/common.js">
-        </script>
-        <link rel="stylesheet" href="/css/main.css">
+        <script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>        
+        <script src = "/js/common.js"></script>
+        <script src = "/js/gallery.js"></script>
+        <link rel="stylesheet" href="/css/common.css">
         <link rel="stylesheet" href="/css/header.css">
         <link rel="stylesheet" href="/css/gallery.css">
     </head>
@@ -14,6 +13,12 @@
             <div data-include="bits/header"></div>
             <div class="flex-row" id="panes">
                 <div class="flex-column" id="left-pane">
+                    <div id="picture-description">
+                        <a>Basic text.</a>
+                    </div>
+                    <div id="picture-settings">
+                        <button id="bt-pic-bg">Background: gray</button>
+                    </div>
                 </div>
                 <div class="flex-column" id="center-pane">
                     <div id="picture-pane">
@@ -25,6 +30,18 @@
                     </div>
                 </div>
                 <div class="flex-column" id="right-pane">
+                    <div class="preview-item">
+                        <a>Placeholder for preview list.</a>
+                    </div>
+                    <div class="preview-item">
+                        <a>Ditto.</a>
+                    </div>
+                    <div class="preview-item">
+                        <a>Ditto.</a>
+                    </div>
+                    <div class="preview-item">
+                        <a>Ditto.</a>
+                    </div>
                 </div>
             </div>
         </div>

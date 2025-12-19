@@ -4,17 +4,37 @@
 }
 #left-pane{
     background: #202020;
+    color:      #DDAAFF;
     padding: 0px;
     width: 25%;
+    font-size: 16px;
+    display: flex;
+    flex-flow: column wrap;
+}
+#left-pane a{
+    margin: 5%;
+}
+#picture-description{
+    height: 90%;
+}
+#picture-settings{
+    height: 10%;
 }
 #center-pane{
     background: #181818;
     padding: 0px;
     width: 50%;
-
 }
 #picture-pane{
     height: 90%;
+}
+#picture-pane img{
+    max-width: 100%;
+    max-height:100%;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    float: center;
 }
 #picture-controls-pane{
     height: 10%;
@@ -22,7 +42,17 @@
 
 #right-pane{
     background: #222222;
+    color:      #DDAAFF;
     padding: 0px;
     max-width: 25%;
     width: 25%;
+    font-size: 14px;
+}
+.preview-item{
+    height:10%;
+    max-height:10%;
+    border: 1px solid #303030;
+}
+.preview-item a{
+    margin: 5%;
 }

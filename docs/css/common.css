@@ -4,7 +4,15 @@ body{
     margin: 0px;
     padding: 0px;
     background: #282828;
+    color:      #DD66FF;
     font-family: Monospace;
+}
+button{
+    height: 100%;
+    width: 100%;
+    background: #242424;
+    color:      #DD66FF;
+    font-size: 24px;
 }
 a{
     text-decoration: none;
