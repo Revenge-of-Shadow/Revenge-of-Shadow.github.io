@@ -1,5 +1,5 @@
 //  Oh, I will find a way to make a pseudodynamic page.
-var count = 1;
+var count = 51;
 var index = count-1;
 
 $(document).ready(function(){
@@ -32,14 +32,16 @@ $(document).ready(function(){
     });
 
     window.onhashchange = function(){
-        //$("#picture-description").load("/bits/gallery/"+index+".html");
         fetch("/bits/gallery/"+index+".html")
             .then(response => response.text())
-            .then(data => {
+            .then(data => { 
                 document.getElementById("description-text").innerHTML = data;
-        });
+            });
         document.getElementById("picture").src ="/images/gallery/"+index+".png";
+        document.getElementById("picture-link").href ="https://github.com/Revenge-of-Shadow/Revenge-of-Shadow.github.io/tree/main/docs/images/gallery/"+index+".png";
     }
     document.location.hash=index;
     window.onhashchange();
+
+
 });

@@ -12,29 +12,29 @@
     <body>
         <div id="main-wrapper">
             <div data-include="bits/header"></div>
-            <div class="flex-row" id="panes">
-                <div class="flex-column" id="left-pane">
+            <div id="panes">
+                <div id="left-pane">
                     <div id="picture-description">
                         <h2>Description:</h2>
+                        <br/>
                         <a id="description-text"></a>
                     </div>
                     <div id="picture-settings">
-                        <button id="bt-pic-bg">Background: gray</button>
                     </div>
                 </div>
-                <div class="flex-column" id="center-pane">
+                <div id="center-pane">
                     <div id="picture-pane">
-                        <img id="picture" src=""/>
+                        <a id="picture-link" href="">
+                            <img id="picture" src=""/>
+                        </a>
                     </div>
                     <div id="picture-controls-pane">
                         <button id="bt-prev"><</button>
-                        <div>
-                            
-                        </div>
+                        <button id="bt-pic-bg">Background: gray</button>
                         <button id="bt-next">></button>
                     </div>
                 </div>
-                <div class="flex-column" id="right-pane">
+                <div id="right-pane">
                 </div>
             </div>
         </div>
