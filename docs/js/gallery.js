@@ -2,11 +2,18 @@
 var count = 51;
 var index = count-1;
 var preview_capacity = 8;
-var preview_offset = 0;
+var preview_offset = Math.trunc(count/preview_capacity)*preview_capacity;
 
 function update_image(id, index){
     console.log(id, index);
         document.getElementById(id).src = "/images/gallery/"+index+".png";
+}
+function update_text(id, index){
+    fetch("/bits/gallery/"+index+".html")
+        .then(response => response.text())
+        .then(data => { 
+            document.getElementById(id).innerHTML = data;
+    });
 }
 
 function create(element, id, innerHTML){
@@ -25,8 +32,14 @@ function update_previews(){
     }
     pane.appendChild(create("button", "bt-preview-up", ""));
     document.getElementById("bt-preview-up").innerHTML = "&#9650;";
+    document.getElementById("bt-preview-up").onclick = function(){
+        preview_offset-=preview_capacity;
+        if(preview_offset < 0) preview_offset = Math.trunc(count/preview_capacity)*preview_capacity;
+        update_previews();
+    }
 
     for(let i = 0; i<preview_capacity; i++){
+        let ind = preview_offset + i;
         pane.appendChild(create("button", "bt-preview-"+i, "")); 
         button = document.getElementById("bt-preview-"+i);
         button.classList.add("preview-button");
@@ -34,10 +47,25 @@ function update_previews(){
         button.appendChild(image);
         text = create("a", "preview-a-"+i, "");
         button.appendChild(text);
-        update_image("preview-img-"+i, i);
+
+        if(ind > count-1){ continue; }
+        
+        update_image("preview-img-"+i, ind);
+        update_text("preview-a-"+i, ind);
+        button.onclick = function(){
+            index = ind; 
+            document.location.hash=index;
+            window.onhashchange();
+        }
     }
     pane.appendChild(create("button", "bt-preview-down", ""));
     document.getElementById("bt-preview-down").innerHTML = "&#9660;";
+    document.getElementById("bt-preview-down").onclick = function(){
+        preview_offset+=preview_capacity;
+        if(preview_offset > count) preview_offset = 0;
+        update_previews();
+    }
+
 }
 
 $(document).ready(function(){
@@ -71,17 +99,13 @@ $(document).ready(function(){
     });
 
     window.onhashchange = function(){
-        fetch("/bits/gallery/"+index+".html")
-            .then(response => response.text())
-            .then(data => { 
-                document.getElementById("description-text").innerHTML = data;
-            });
+        update_text("description-text", index);
         update_image("picture", index);
         document.getElementById("picture-link").href ="https://github.com/Revenge-of-Shadow/Revenge-of-Shadow.github.io/tree/main/docs/images/gallery/"+index+".png";
+        update_previews();
     }
 
     document.location.hash=index;
     window.onhashchange();
-    update_previews();
 
 });
