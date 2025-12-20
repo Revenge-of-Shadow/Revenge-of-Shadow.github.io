@@ -4,22 +4,23 @@ var index = count-1;
 
 $(document).ready(function(){
     $("#bt-pic-bg").click(function(){
-        $("#bt-pic-bg").text(function(i, origText){
-            var bits = origText.split(" ");
-            origText = bits.pop();
-            if(origText === "gray"){
-                origText = "black";
+        $("#bt-pic-bg").html(function(i, origText){
+            var bits = $("#bt-pic-bg").text().split(" ");
+            text = bits.pop();
+            if(text === "gray"){
+                text = "black";
+                colorName = "black";
             }
-            else if(origText === "black"){
-                origText = "white"
+            else if(text === "black"){
+                text = "white"
+                colorName = "white";
             }
-            else if(origText === "white"){
-                origText = "gray";
-                $("#picture-pane").css("background-color", "#181818");
-                return "Background: "+origText;
+            else if(text === "white"){
+                text = "gray";
+                colorName = "#202020";
             }
-            $("#picture-pane").css("background-color", origText);
-            return "Background: "+origText;
+            $("#picture-pane").css("background-color", colorName);
+            return "<a>Background: <a style=\"color:"+colorName+";\">"+text+"</a></a>";
         });
     });
     $("#bt-prev").click(function(){

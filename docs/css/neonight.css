@@ -22,7 +22,7 @@ button{
 }
 
 #left-pane{
-    background: #202020;
+    background: #1A1A1A;
 }
 #left-pane h2{
     color:      #DD66FF;
@@ -31,10 +31,13 @@ button{
     color:      #DDAAFF;
 }
 #center-pane{
-    background: #181818;
+    background: #202020;
+}
+#picture-pane{
+    background: #202020;
 }
 #right-pane{
-    background: #222222;
+    background: #1A1A1A;
     color:      #DDAAFF;
 }
 
