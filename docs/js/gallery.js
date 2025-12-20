@@ -9,7 +9,7 @@ function update_image(id, index){
         document.getElementById(id).src = "/images/gallery/"+index+".png";
 }
 function update_text(id, index){
-    fetch("/bits/gallery/"+index+".html")
+    fetch("/bits/gallery/"+index+".html", { cache: "no-store" })
         .then(response => response.text())
         .then(data => { 
             document.getElementById(id).innerHTML = data;
