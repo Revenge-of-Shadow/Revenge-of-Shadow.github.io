@@ -27,3 +27,6 @@ img{
     display: grid;
     grid-template-rows: auto 1fr;
 }
+.centered{
+    text-align: center;
+}

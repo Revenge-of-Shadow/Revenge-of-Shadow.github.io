@@ -4,7 +4,7 @@
 }
 body{
     background: #282828;
-    color:      #FF88FF;
+    color:      #FF99FF;
     font-family: Monospace;
 }
 button{
@@ -48,4 +48,19 @@ a{
 .preview-button span{
     border: 1px solid #444444;
     padding: 5%;
+}
+
+
+#library-list{
+    border: 1px solid #444444;
+}
+.library-entry,
+.library-entry-wpicture{
+    border: 1px solid #444444;
+}
+#library-list{
+    background: #1A1A1A;
+}
+.library-breaker{
+    background: #202020;
 }
