@@ -46,7 +46,7 @@ function update_previews(){
         button.classList.add("preview-button");
         button.appendChild(create("div", "preview-img-wrapper-"+i, ""));
         imagewrapper  = document.getElementById("preview-img-wrapper-"+i);
-        imagewrapper.classList.add("preview-img-wrapper");
+        imagewrapper.classList.add("img-wrapper");
         image = create("img", "preview-img-"+i, "");
         imagewrapper.appendChild(image);
         text = create("span", "preview-span-"+i, "");
