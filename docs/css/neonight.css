@@ -1,4 +1,7 @@
 /*  Not sorry if anyone copyrighted this name. */
+*{
+    scrollbar-color: #DD66FF #282828;
+}
 body{
     background: #282828;
     color:      #DD66FF;
@@ -9,6 +12,10 @@ button{
     color:      #DD66FF;
     font-family: Monospace;
 }
+a{
+    text-decoration:none;
+    color:      #DDDDFF;
+}
 
 #header{
     background: #222222;
@@ -17,9 +24,6 @@ button{
 #header div{
     border: 1px solid #303030;
 }
-#header div a{
-    color:      #DD66FF;
-}
 
 #left-pane{
     background: #1A1A1A;
@@ -27,7 +31,7 @@ button{
 #left-pane h2{
     color:      #DD66FF;
 }
-#left-pane a{
+#left-pane span{
     color:      #DDAAFF;
 }
 #center-pane{
@@ -41,3 +45,7 @@ button{
     color:      #DDAAFF;
 }
 
+.preview-button span{
+    border: 1px solid #444444;
+    padding: 5%;
+}

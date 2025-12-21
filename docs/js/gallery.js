@@ -3,6 +3,7 @@ var count = 401;
 var index = count-1;
 var preview_capacity = 8;
 var preview_offset = Math.trunc(count/preview_capacity)*preview_capacity;
+if(preview_offset == count){ preview_offset -= preview_capacity; }
 
 function update_image(id, index){
     console.log(id, index);
@@ -43,15 +44,18 @@ function update_previews(){
         pane.appendChild(create("button", "bt-preview-"+i, "")); 
         button = document.getElementById("bt-preview-"+i);
         button.classList.add("preview-button");
+        button.appendChild(create("div", "preview-img-wrapper-"+i, ""));
+        imagewrapper  = document.getElementById("preview-img-wrapper-"+i);
+        imagewrapper.classList.add("preview-img-wrapper");
         image = create("img", "preview-img-"+i, "");
-        button.appendChild(image);
-        text = create("a", "preview-a-"+i, "");
+        imagewrapper.appendChild(image);
+        text = create("span", "preview-span-"+i, "");
         button.appendChild(text);
 
         if(ind > count-1){ continue; }
         
         update_image("preview-img-"+i, ind);
-        update_text("preview-a-"+i, ind);
+        update_text("preview-span-"+i, ind);
         button.onclick = function(){
             index = ind; 
             document.location.hash=index;
@@ -99,13 +103,14 @@ $(document).ready(function(){
     });
 
     window.onhashchange = function(){
+        index = Number(document.location.hash.split('#').pop());
         update_text("description-text", index);
         update_image("picture", index);
         document.getElementById("picture-link").href ="https://github.com/Revenge-of-Shadow/Revenge-of-Shadow.github.io/tree/main/docs/images/gallery/"+index+".png";
         update_previews();
     }
 
-    document.location.hash=index;
+    if(document.location.hash === ""){ document.location.hash = index; }
     window.onhashchange();
 
 });

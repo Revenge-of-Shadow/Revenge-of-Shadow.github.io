@@ -5,17 +5,13 @@
 }
 #left-pane{
     font-size: 20px;
-    display: grid;
     height:100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    grid-template-rows: 90% 10%;
     min-height: 0;
 }
-#left-pane a,
-#left-pane h2{
-}
 #picture-description{
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow-y: scroll;
     height:100%;
 }
 #picture-settings{
@@ -40,8 +36,6 @@
     grid-template-columns: 25% 50% 25%;
     min-width: 0;
 }
-#picture-controls-pane button{
-}
 
 #right-pane{
     font-size: 14px;
@@ -53,15 +47,22 @@
 .preview-button{
     width: 100%;
     height:100%;
-    display: flex;
-    flew-flow: rows wrap;
+    display: grid;
+    grid-template-columns: 20% 80%;
     min-height: 0;
 }
-.preview-button img{
+.preview-button div img{
     max-width: 100%;
     max-height:100%;
-    float: left;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    float: center;
 }
-.preview-button a{
+.preview-button span{
     font-size: 16px;
+    text-align: left;
 }
+.preview-img-wrapper{
+}
+
