@@ -1,12 +1,14 @@
 #panes{
     display: grid;
     grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 60% 40%;
     min-height: 0;
 }
 #left-pane{
     font-size: 20px;
     height:100%;
     min-height: 0;
+    grid-row: span 2;
 }
 #picture-description{
     padding-left: 5%;
@@ -20,6 +22,7 @@
     display: grid;
     grid-template-rows: 90% 10%;
     min-height: 0;
+    grid-row: span 2;
 }
 #picture-pane{
 }
@@ -43,6 +46,7 @@
     display: grid;
     grid-template-rows: repeat(10, 10%);
     min-height: 0;
+    grid-row: span 2;
 }
 .preview-button{
     width: 100%;
@@ -66,3 +70,22 @@
 .preview-img-wrapper{
 }
 
+@media (max-width: 767px){
+    #left-pane,button{
+        font-size: 12px;
+    }
+    .preview-button{
+        grid-template-columns: 100% 0%;
+    }
+    #panes{
+        grid-template-columns: 90% 10%;
+    }
+    #left-pane{
+        grid-row: 2 / span 1;
+        font-size: 12px;
+    }
+    #center-pane{
+        grid-row: 1 / span 1;
+    }
+
+}
