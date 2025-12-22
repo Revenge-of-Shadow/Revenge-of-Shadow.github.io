@@ -13,6 +13,7 @@ p{
     font-size: 18px; 
 }
 #workshop-entries{
+    padding: 0%;
     overflow-y: scroll;
 }
 
@@ -25,7 +26,7 @@ p{
 .workshop-entry-wpicture{
     flex: 0 1 auto;
     width:          100%;
-    padding: 1%;
+    padding: 0%;
     grid-template-rows: auto auto;
 }
 .workshop-entry-wpicture{
@@ -35,16 +36,18 @@ p{
 .workshop-entry-title{
     text-align:     center;
     grid-column:    1 / span 2;
-    padding:        0;
+    padding:        1%;
 }
 .workshop-img-wrapper{
     display:    grid;
     grid-template-rows:     90% 10%;
     grid-template-columns:  50% 50%;
+    padding:    5%;
 }
 .workshop-img-wrapper .img-wrapper{
     grid-column: 1 / span 2;
     height:     100%;
+    padding:    0%;
 }
 
 .workshop-bt-prev{
@@ -58,9 +61,16 @@ p{
 
 .text-wrapper,#workshop-list{
     padding: 2%;
-    overflow-y: scroll;
     height:     100%;
 }
+#workshop-list{
+    overflow-y: scroll;
+}
+.text-wrapper{
+    overflow-y: hidden;
+}
+
+
 
 @media (max-width: 767px){
     p, button{

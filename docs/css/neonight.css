@@ -51,16 +51,23 @@ a{
 }
 
 
-#library-list{
-    border: 1px solid #444444;
-}
 .library-entry,
-.library-entry-wpicture{
+.library-entry-wpicture,
+.library-entry-title,
+.workshop-entry,
+.workshop-entry-wpicture,
+.workshop-entry-title{
+    background: #282828;
     border: 1px solid #444444;
 }
-#library-list{
+#library-list,
+#library-entries,
+#workshop-list,
+#workshop-entries{
     background: #1A1A1A;
+    border: 1px solid #444444;
 }
-.library-breaker{
+.library-breaker,
+.workshop-breaker{
     background: #202020;
 }
