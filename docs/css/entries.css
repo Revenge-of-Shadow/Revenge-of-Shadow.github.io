@@ -1,69 +1,69 @@
 p{
     font-size: 20px;
 }
-#workshop-wrapper{
+#entry-wrapper{
     display:    grid;
     grid-template-columns: 20% 80%;
 }
-#workshop-list{
+#entry-list{
     padding: 2%;
 }
-#workshop-list *{
+#entry-list *{
     padding: 2%;
     font-size: 18px; 
 }
-#workshop-entries{
+#entries{
     padding: 0%;
     overflow-y: scroll;
 }
 
-.workshop-breaker{
+.entry-breaker{
     text-align: center;
     font-size:  24px;
     padding:    5%;
 }
-.workshop-entry,
-.workshop-entry-wpicture{
+.entry,
+.entry-wpicture{
     flex: 0 1 auto;
     width:          100%;
     padding: 0%;
     grid-template-rows: auto auto;
 }
-.workshop-entry-wpicture{
+.entry-wpicture{
     display:    grid;
     grid-template-columns:  25% 75%;
 }
-.workshop-entry-title{
+.entry-title{
     text-align:     center;
     grid-column:    1 / span 2;
     padding:        1%;
 }
-.workshop-img-wrapper{
+.entry-img-wrapper{
     display:    grid;
     grid-template-rows:     90% 10%;
     grid-template-columns:  50% 50%;
     padding:    5%;
 }
-.workshop-img-wrapper .img-wrapper{
+.entry-img-wrapper .img-wrapper{
     grid-column: 1 / span 2;
     height:     100%;
     padding:    0%;
 }
 
-.workshop-bt-prev{
+.entry-bt-prev{
     grid-column: 1;
     grid-row: 2;
 }
-.workshop-bt-next{
+.entry-bt-next{
     grid-column: 2;
     grid-row: 2;
 }
 
-.text-wrapper,#workshop-list{
+.text-wrapper,#entry-list{
     padding: 2%;
     height:     100%;
 }
-#workshop-list{
+#entry-list{
     overflow-y: scroll;
 }
 .text-wrapper{
@@ -76,18 +76,18 @@ p{
     p, button{
         font-size: 14px;
     }
-    #workshop-wrapper{
+    #entry-wrapper{
         grid-template-columns: 100%;
         grid-template-rows: 90% 10%;
     }
-   #workshop-entries{
+    #entries{
         grid-row: 1;
     }
-    #workshop-list{
+    #entry-list{
         grid-row: 2;
     }
 
-    .workshop-entry-wpicture{
+    .entry-wpicture{
         grid-template-columns: 100%;
         grid-template-rows: auto auto auto;
     }

@@ -1,10 +1,10 @@
 function update_image(topicid, index){
-    document.getElementById("workshop-img-"+topicid).src = "/images/workshop/"+topicid+index+".png";
+    document.getElementById("entry-img-"+topicid).src = "/images/workshop/"+topicid+index+".png";
 }
 
 $(document).ready(function(){
     //  I have no mercy on JavaScript.
-    $(".workshop-bt-prev").click(function(){
+    $(".entry-bt-prev").click(function(){
         var topicid=$(this).attr("id").split("-").pop();
         var ind=Number($("#"+topicid+"ind").text())
         var max=Number($("#"+topicid+"max").text());
@@ -12,7 +12,7 @@ $(document).ready(function(){
         $("#"+topicid+"ind").text(ind);
         update_image(topicid, ind);
     });
-    $(".workshop-bt-next").click(function(){
+    $(".entry-bt-next").click(function(){
         var topicid=$(this).attr("id").split("-").pop();
         var ind=Number($("#"+topicid+"ind").text())
         var max=Number($("#"+topicid+"max").text());
