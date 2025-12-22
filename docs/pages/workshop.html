@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="/css/common.css">
         <link rel="stylesheet" href="/css/neonight.css">
         <link rel="stylesheet" href="/css/header.css">
-        <title>Requiem for Electroheart</title>
+        <title>The art of mind</title>
         <style>
             #choice{
                 display:    grid;
@@ -25,9 +25,20 @@
             }
         
             @media (max-width: 767px){
+                p, button{
+                    font-size: 14px;
+                }
                 #choice{
                     display:    grid;
                     grid-template-rows: 50% 50%;
+                }
+                #cb1{
+                    grid-column: 1 / span 2;
+                    grid-row: 1;
+                }
+                #cb2{
+                    grid-column: 1 / span 2;
+                    grid-row: 2;
                 }
             }
         </style>
@@ -37,7 +48,7 @@
             <div data-include="bits/header"></div> 
 
             <div id="choice">
-                <a href="/pages/contraptions.html">
+                <a href="/pages/contraptions.html" id="cb1">
                     <button class="choicebox">
                         <div class="img-wrapper">
                             <img src="/images/workshop/inventions.png">
@@ -45,7 +56,7 @@
                         <h1>Contraptions</h1>
                     </button>
                 </a>
-                <a href="/pages/digital.html">
+                <a href="/pages/digital.html" id="cb2">
                     <button class="choicebox">
                         <div class="img-wrapper">
                             <img src="/images/workshop/phasors.png">
