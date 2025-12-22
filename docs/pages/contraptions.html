@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>        
+        <script src = "/js/common.js"></script>
+        <script src = "/js/workshop.js"></script>
+        <link rel="stylesheet" href="/css/common.css">
+        <link rel="stylesheet" href="/css/neonight.css">
+        <link rel="stylesheet" href="/css/header.css">
+        <link rel="stylesheet" href="/css/workshop.css">
+        <title>Requiem for Electroheart</title>
+    </head>
+    <body>
+        <p hidden=true id="carind">1</p>
+        <p hidden=true id="carmax">15</p>
+        <p hidden=true id="lightsaberind">0</p>
+        <p hidden=true id="lightsabermax">3</p>
+        <p hidden=true id="metal_gloveind">6</p>
+        <p hidden=true id="metal_glovemax">6</p>
+        <p hidden=true id="pumpkinind">0</p>
+        <p hidden=true id="pumpkinmax">2</p>
+        <p hidden=true id="decoderind">0</p>
+        <p hidden=true id="decodermax">1</p>
+        <p hidden=true id="crownind">0</p>
+        <p hidden=true id="crownmax">1</p>
+        <p hidden=true id="metal_menaceind">21</p>
+        <p hidden=true id="metal_menacemax">21</p>
+        <p hidden=true id="nukeballind">3</p>
+        <p hidden=true id="nukeballmax">4</p>
+        <p hidden=true id="protosentryind">14</p>
+        <p hidden=true id="protosentrymax">15</p>
+        <p hidden=true id="miupackind">3</p>
+        <p hidden=true id="miupackmax">3</p>
+        <div id="main-wrapper">
+            <div data-include="bits/header"></div> 
+            <div id="workshop-wrapper">
+                <div id="workshop-list">
+                    <ul>
+                        <li><a href="#Car">Car</a></li>
+                        <li><a href="#Lightsaber">Lightsaber</a></li>
+                        <li><a href="#Metal_glove">Metal glove</a></li>
+                        <li><a href="#Pumpkin">Pumpkin</a></li>
+                        <li><a href="#Morse_decoder">Morse decoder</a></li>
+                        <li><a href="#Crown">Tin crown</a></li>
+                        <li><a href="#Metal_menace">Metal menace</a></li>
+                        <li><a href="#Nukeball">Nukeball</a></li>
+                        <li><a href="#ProtoSentry">ProtoSentry</a></li>
+                        <li><a href="#MiuPack">MiuPack</a></li>
+                        <li>
+                            <h1>Assorted</h1>
+                            <ul>
+                                <li><a href="#Flashlight">Flashlight</a></li>
+                                <li><a href="#Wheeled_robo">Wheeled robo</a></li>
+                                <li><a href="#Console">Console</a></li>
+                                <li><a href="#Cork_gun">Cork gun</a></li>
+                                <li><a href="#Heater_and_cooler">Heater and cooler</a></li>
+                                <li><a href="#Une_voiture_petite">Une voiture petite</a></li>
+                                <li><a href="#Zapper">Zapper</a></li>
+                                <li><a href="#Stick">Magic stick</a></li>
+                                <li><a href="#Axe">Colored axe</a></li>
+                                <li><a href="#Chair">Chair</a></li>
+                                <li><a href="#Glasses">Glasses</a></li>
+                                <li><a href="#Гирлянда">Гирлянда</a></li>
+                                <li><a href="#Mini-molotov">Mini-molotov</a></li>
+                                <li><a href="#Fake_charger">Fake charger</a></li>
+                                <li><a href="#Taser">Taser</a></li>
+                                <li><a href="#Portable_fan">Portable fan</a></li>
+                                <li><a href="#D8">D8</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="workshop-entries">
+                    <div class="workshop-entry-wpicture" id="Car">
+                        <div class="workshop-entry-title">
+                            <h1><a href="https://youtu.be/RhKHAF4RXVY">Car</a></h1>     
+                            <p>made 20220116; reviewed 20251222 0814</p>
+                        </div>
+                        <div class="workshop-img-wrapper">
+                            <button class="workshop-bt-prev" id="workshop-bt-prev-car">&#9664;</button>
+                            <div class="img-wrapper">
+                                <img id="workshop-img-car" src="/images/workshop/car1.png"/>
+                            </div>
+                            <button class="workshop-bt-next" id="workshop-bt-next-car">&#9654;</button>
+                        </div>
+                        <div class="text-wrapper">
+                            <br/>
+                            <p>This has got to be my craziest invention.</p>
+                            <br/>
+                            <p>On the very beginning of high school, already being know as a passionate tinkerer, I found a pile of planks on the way to school and just could not pass by.</p>
+                            <p>It took me a good half a year of hard work to assemble this nonsense, planning on the go. I just screwed all the planks together, segment by segment, all whilst adding crazy ideas like doors opening upwards, fan, <a href="https://youtu.be/skIySACYmm8">bass-busted speakers</a>, heater, <a href="https://youtu.be/uc7Slr-wmAg">key-controlled power supply</a> and <a href="https://youtu.be/Ie36xNzZiPA">other things</a> I no longer remember.</p>
+                            <p>It was absurd. It was huge. It was made about exclusively from junk.</p><p>It was very fun.</p>
+                            <p>The teachers were politely impressed, the technologies teacher was just shocked; the class did not give me much credit. I myself can barely remember I created this.</p>
+                            <p>And yet I did and it was fun.</p>
+                        </div>
+                    </div>
+                    <div class="workshop-entry-wpicture" id="Lightsaber">
+                        <div class="workshop-entry-title">
+                            <h1><a href="https://youtu.be/KDaPdm_P46s">Lightsaber</a></h1>     
+                            <p>made 20220618; reviewed 202512220 0840</p>
+                        </div>
+                        <div class="workshop-img-wrapper">
+                            <button class="workshop-bt-prev" id="workshop-bt-prev-lightsaber">&#9664;</button>
+                            <div class="img-wrapper">
+                                <img id="workshop-img-lightsaber" src="/images/workshop/lightsaber0.png"/>
+                            </div>
+                            <button class="workshop-bt-next" id="workshop-bt-next-lightsaber">&#9654;</button>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>I was a Star Wars fanatic for years, having read circa one hundred and twenty Star Wars novels before mid-middle school. I still posess great knowledge of the "galaxy far, far away", but at some moment I have fallen out of it.</p>
+                            <br>
+                            <p>I wanted a lightsaber of my own. In fact, once I bought a cheap one. And it was full of plastic and just too dim.</p>
+                            <br>
+                            <p>I kept thinking on making my own lightsaber model for years. I asked my grandfather to cut me a piece of pipe and he did so, which I am grateful for. It took me a long time to become savvy enough to prepare all the parts and put them together.</p>
+                            <br>
+                            <p>And I made it. Couple of transistors, resistor, capacitor, speaker, found accumulator, button switch I repeatedly colored black and forty-two light-emitting diodes. Because fifty did not fit in inside of the tube.</p>
+                            <br>
+                            <p>I took the plastic tube from the bought lightsaber and added bubble wrapping inside of it to spread the light smoothly and affix the diodes.</p>
+                            <br>
+                            <p>I was considering the color for some time. I naturally wanted it to keep the blue color of my idolized Jedi, Anakin Skywalker; still I decided to go with my favourite color after black at that time. Not because of the Sith. Because red pairs very well with black.</p>
+                        </div>
+                    </div>
+                    <div class="workshop-entry-wpicture" id="Metal_glove">
+                        <div class="workshop-entry-title">
+                            <h1>Metal glove</h1>     
+                            <p>made 20221024; reviewed 20251222 0844</p>
+                        </div>
+                        <div class="workshop-img-wrapper">
+                            <button class="workshop-bt-prev" id="workshop-bt-prev-metal_glove">&#9664;</button>
+                            <div class="img-wrapper">
+                                <img id="workshop-img-metal_glove" src="/images/workshop/metal_glove6.png"/>
+                            </div>
+                            <button class="workshop-bt-next" id="workshop-bt-next-metal_glove">&#9654;</button>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>The most impressive of my projects.</p>
+                            <br/>
+                            <p>Perhaps I was very inspired by Loremaster. I can not recall what was the spark that caused the ignition for my desire to make a metal glove.</p>
+                            <br/>
+                            <p>In the high school I schemed and assembled a glove out of countless tin cans. All by myself, with no references, no prequisite studies of armor. Nothing but ingenuity, paper, pencils, markers, tin cans, scissors, drill, screw and nuts. I was scheming on lessons and in my free time.</p>
+                            <br/>
+                            <p>I was sketching, thinking how to connect one part to another.</p>
+                            <br/>
+                            <p>And it worked.</p>
+                            <br/>
+                            <p>I am still very proud of it.</p>
+                            <br/>
+                        </div>
+                    </div>
+                    <div class="workshop-entry-wpicture" id="Pumpkin">
+                        <div class="workshop-entry-title">
+                            <h1>Pumpkin</h1>     
+                            <p>made 20221102; reviewed 202512220905</p>
+                        </div>
+                        <div class="workshop-img-wrapper">
+                            <button class="workshop-bt-prev" id="workshop-bt-prev-pumpkin">&#9664;</button>
+                            <div class="img-wrapper">
+                                <img id="workshop-img-pumpkin" src="/images/workshop/pumpkin0.png"/>
+                            </div>
+                            <button class="workshop-bt-next" id="workshop-bt-next-pumpkin">&#9654;</button>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>I put an accumulator, a diode and a resistor into a pumpkin I spontaneously carved.</p>
+                            <br/>
+                            <p>I left it outside on a tree just outside my window. It was stolen by the morning.</p>
+                            <br>
+                            <p>I made a new one then, but it was by far less impressive. Therefore it was not stolen and had rotten to oblivion.</p>
+                        </div>
+                    </div>
+                    <div class="workshop-entry-wpicture" id="Morse_decoder">
+                        <div class="workshop-entry-title">
+                            <h1>Morse decoder</h1>     
+                            <p>made 20221113; reviewed 20251222 0913</p>
+                        </div>
+                        <div class="workshop-img-wrapper">
+                            <button class="workshop-bt-prev" id="workshop-bt-prev-decoder">&#9664;</button>
+                            <div class="img-wrapper">
+                                <img id="workshop-img-decoder" src="/images/workshop/decoder0.png"/>
+                            </div>
+                            <button class="workshop-bt-next" id="workshop-bt-next-decoder">&#9654;</button>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>A device that listened to the sounds and wrote down translation from Morse code.</p>
+                            <br>
+                            <p>Given that it was built on arduino and a cheap sonic sensor, it was of very poor quality and struggled to pick even a preprogrammed sequence I was playing from computer or something.</p>
+                        </div>
+                    </div>
+                    <div class="workshop-entry-wpicture" id="Crown">
+                        <div class="workshop-entry-title">
+                            <h1>Crown</h1>     
+                            <p>made 20230106; reviewed 202512220858</p>
+                        </div>
+                        <div class="workshop-img-wrapper">
+                            <button class="workshop-bt-prev" id="workshop-bt-prev-crown">&#9664;</button>
+                            <div class="img-wrapper">
+                                <img id="workshop-img-crown" src="/images/workshop/crown0.png"/>
+                            </div>
+                            <button class="workshop-bt-next" id="workshop-bt-next-crown">&#9654;</button>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>A useless appealing trinket I made without thinking too much, somewhen in the era when I was actively using tin cans for everything.</p>
+                            <br/>
+                            <p>That was the time indeed...</p>
+                        </div>
+                    </div>
+                    <div class="workshop-entry-wpicture" id="Metal_menace">
+                        <div class="workshop-entry-title">
+                            <h1><a href="https://youtu.be/lRxsd426noQ">Metal menace</a></h1>     
+                            <p>made 20230629; reviewed 20251222 0921</p>
+                        </div>
+                        <div class="workshop-img-wrapper">
+                            <button class="workshop-bt-prev" id="workshop-bt-prev-metal_menace">&#9664;</button>
+                            <div class="img-wrapper">
+                                <img id="workshop-img-metal_menace" src="/images/workshop/metal_menace21.png"/>
+                            </div>
+                            <button class="workshop-bt-next" id="workshop-bt-next-metal_menace">&#9654;</button>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>'Tis but a tragedy.</p>
+                            <br>
+                            <p>I am since long passionate with cybernetics - in my imagination it is nothing but personally controlled mechatronic devices. Huge humanoid mechas I saw in some cartoons and daydreams, robotic creation of Loremaster, and, importantly, drawings with robotic hands directly controlled by inventors.</p>
+                            <br>
+                            <p>I had parts of all kinds. I had Arduino boards. Eventually, I found inspiration.</p>
+                            <p>Initially, "Project: Metal menace" and "Project: Metal glove" were one. I divided them for practical reasons.</p>
+                            <p>I tirelessly worked on this dream, seeking parts and solutions, forming elements.</p>
+                            <br>
+                            <p>I did not expect my poor mechanics knowledge to backfire this badly.</p>
+                            <p>It was the most basic principle - the lever rule. I did not account for it and servomotors broke after struggling to lift the mechanical arms.</p>
+                            <br>
+                            <p>The failure left me in despair for a long time.</p>
+                        </div>
+                    </div>
+                    <div class="workshop-entry-wpicture" id="Nukeball">
+                        <div class="workshop-entry-title">
+                            <h1>Nukeball</h1>     
+                            <p>made 20230718; reviewed 20251222 1145</p>
+                        </div>
+                        <div class="workshop-img-wrapper">
+                            <button class="workshop-bt-prev" id="workshop-bt-prev-nukeball">&#9664;</button>
+                            <div class="img-wrapper">
+                                <img id="workshop-img-nukeball" src="/images/workshop/nukeball3.png"/>
+                            </div>
+                            <button class="workshop-bt-next" id="workshop-bt-next-nukeball">&#9654;</button>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>I always thought that <a href="https://starwars.fandom.com/wiki/Thermal_detonator/Legends">thermal detonator</a> is cool. In best iterations, it beeps slowly, then faster and faster until the timer goes off and sets a sizeable explosion from just one nice spherical object.</p>
+                            <br>
+                            <p>Years of tinkering were not for nothing, as it seemed, since I collected some knowledge having <b>burned eight holes through my jacket</b> with just one shorted accumulator that had a back-up switch.</p>
+                            <br>
+                            <p>I decided that making electronical timer is just too difficult and unnecessary. So I calculated how much time it would take for a wire to get enough heat to ignite gunpowder around it. I thereby estimated the time. I tried igniting gunpowder separately with shorted wire and then assembled this device.</p>
+                            <p>Thank code I never tested the theory.</p>
+                        </div>
+                    </div>
+                    <div class="workshop-entry-wpicture" id="ProtoSentry">
+                        <div class="workshop-entry-title">
+                            <h1><a href="https://youtu.be/PRHuttxjQTw">ProtoSentry</a></h1>     
+                            <p>made 20240913; reviewed 20251222 1425</p>
+                        </div>
+                        <div class="workshop-img-wrapper">
+                            <button class="workshop-bt-prev" id="workshop-bt-prev-protosentry">&#9664;</button>
+                            <div class="img-wrapper">
+                                <img id="workshop-img-protosentry" src="/images/workshop/protosentry14.png"/>
+                            </div>
+                            <button class="workshop-bt-next" id="workshop-bt-next-protosentry">&#9654;</button>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>My most presentable project.</p>
+                            <br>
+                            <p>I got into Team Fortress 2 at some point in my life. Pyro was a close call, but I could not be any more fitting to be Engineer.</p>
+                            <p>Naturally, cosplay was just not enough. What is it worth if someone just dresses as a character? Nay, one must become that persona!</p>
+                            <br>
+                            <p>It was hard. It was very hard.</p>
+                            <p>I had to shape metal with what little tools I had at hand. I was cutting it with strong scissors and bending it with a small hammer. I drew schematics. I pondered.</p>
+                            <br>
+                            <p>The worst happened when I started with electronics, unsurprisingly. The servomotors were proven to be too weak for full mobility, so I was forced to keep only one axis. Arduino had proven to be too weak to play sounds and rotate motors, so I used two Arduino Nano boards in  a horrific mess of wires that barely fit into the metal body. Classic sonic distance sensors SR04 failed repeatedly, so I just soldered two of them in parallel for no reason and let them be.</p>
+                            <br>
+                            <p>More than once I wanted to give up on this project. I did not - out of desperation. I can not stand giving up on something that was very close to working.</p>
+                            <p>My girlfriend at the time supported me greatly, which helped a lot. I am still grateful for all she had done for me.</p>
+                            <br>
+                            <p>I finished it and brought it to a cosplay convention. On it it got progressively more broken over time, requiring me to screw it back together and tackle with tape. By evening it barely worked.</p>
+                            <p>I fixed it and gave it to my fellow Engineer cosplayer. It broke on the way and was never fixed.</p>
+                        </div>
+                    </div>
+                    <div class="workshop-entry-wpicture" id="MiuPack">
+                        <div class="workshop-entry-title">
+                            <h1>MiuPack</h1>     
+                            <p>made 20240918; reviewed 20251222 1447</p>
+                        </div>
+                        <div class="workshop-img-wrapper">
+                            <button class="workshop-bt-prev" id="workshop-bt-prev-miupack">&#9664;</button>
+                            <div class="img-wrapper">
+                                <img id="workshop-img-miupack" src="/images/workshop/miupack3.png"/>
+                            </div>
+                            <button class="workshop-bt-next" id="workshop-bt-next-miupack">&#9654;</button>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>My girlfriend at the time cosplayed Iruma Miu sometimes, so I reassembled the failed "Project: Metal menace" into this simplified weirdness.</p>
+                            <p>It initiated a short circuit right when I brought it to her. I took it back, repaired it and then sent it via post.</p>
+                            <br>
+                            <p>Still, it seems to have missed the spot...</p>
+                        </div>
+                    </div>
+
+                    <div class="workshop-breaker" id="Assorted">
+                        <h1>Assorted</h1>
+                    </div>
+                    <div class="workshop-entry-wpicture" id="Flashlight">
+                        <div class="workshop-entry-title">
+                            <h1><a href="https://youtu.be/U_0fw1JEtnA">Flashlight</a></h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/flashlight.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>Leftovers of a cheap flashlight, 18650 without protection, USB-A and a lot of insulation tape.<br/>Every beginner egineer's first creation, am I right?</p>
+                        </div>
+                    </div> 
+                    <div class="workshop-entry-wpicture" id="Wheeled_robo">
+                        <div class="workshop-entry-title">
+                            <h1>Wheeled robo</h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/wheeled_robo.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>Come on! This is Arduino classic!</p>
+                        </div>
+                    </div> 
+                    <div class="workshop-entry-wpicture" id="Console">
+                        <div class="workshop-entry-title">
+                            <h1>Console</h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/console0.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>I made a simple video game console. If I recall, it was before all of the aforementioned inventions and thingamabobs.</p>
+                            <p>I did not save code for it, nor schematics and I have only few photos.</p>
+                        </div>
+                    </div> 
+                    <div class="workshop-entry-wpicture" id="Cork_gun">
+                        <div class="workshop-entry-title">
+                            <h1>Cork gun</h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/cork_gun.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>Once upon a time, as I was fascinated with cork guns, I found a video on YouTube, showing how to make one.</p>
+                            <p>I followed it as much as my posessions allowed me to.</p>
+                            <br>
+                            <p>It worked nearly flawlessly.</p>
+                        </div>
+                    </div> 
+                    <div class="workshop-entry-wpicture" id="Heater_and_cooler">
+                        <div class="workshop-entry-title">
+                            <h1>Heater and cooler</h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/heater_cooler.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>18650 shorted with copper wire was just potentially deadly. I must have been really lucky.</p>
+                            <p>The 18650 with a propeller was safe, on the other hand. I can not seem to remember what happened to it.</p>
+                        </div>
+                    </div> 
+                    <div class="workshop-entry-wpicture" id="Une_voiture_petite">
+                        <div class="workshop-entry-title">
+                            <h1><a href="https://youtu.be/nQAcTQzT91o">Une voiture petite</a></h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/carette.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>A tiny car! Oh, before a big one there was a small one!</p>
+                            <br>
+                            <p>I had a bit of fun launching it in the school corridors when nobody was watching.</p>
+                        </div>
+                    </div> 
+                    <div class="workshop-entry-wpicture" id="Zapper">
+                        <div class="workshop-entry-title">
+                            <h1>Zapper</h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/zapper.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p><i>You see, I am wearing a special glove. You can shake my hand, but you'd better not let go!</i></p>
+                            <br>
+                            <p>To my disappointment, aroused no interest in my class. It was much more interesting to them off of my hand and for them to shock their own selves.</p>
+                        </div>
+                    </div> 
+                    <div class="workshop-entry-wpicture" id="Stick">
+                        <div class="workshop-entry-title">
+                            <h1>Magic stick</h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/stick.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>Bamboo with a lightbulb.</p>
+                        </div>
+                    </div> 
+                    <div class="workshop-entry-wpicture" id="Axe">
+                        <div class="workshop-entry-title">
+                            <h1>Colored axe</h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/axe.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>Not exactly an invention.</p>
+                            <br>
+                            <p>As a passionate scout I had my own axe.</p>
+                            <p>I colored it on a whim.</p>
+                        </div>
+                    </div> 
+                    <div class="workshop-entry-wpicture" id="Chair">
+                        <div class="workshop-entry-title">
+                            <h1>Chair</h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/chair.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>A long time ago I was allowed to play with two broken chairs in school.</p>
+                            <br>
+                            <p>One I fixed.</p>
+                            <p>The other one is on the photo.</p>
+                        </div>
+                    </div> 
+                    <div class="workshop-entry-wpicture" id="Glasses">
+                        <div class="workshop-entry-title">
+                            <h1>Glasses</h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/glasses.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>They broke, so I fixed them by mounting a tiny flashlight on the joint.</p>
+                            <p>They even worked!.. barely.</p>
+                        </div>
+                    </div> 
+                    <div class="workshop-entry-wpicture" id="Гирлянда">
+                        <div class="workshop-entry-title">
+                            <h1>Гирлянда</h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/гирлянда.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>It took me some time to solder all those light-emitting diodes together with an unused accumulator.</p>
+                            <p>Useless.</p>
+                            <p>Pretty.</p>
+                        </div>
+                    </div> 
+                    <div class="workshop-entry-wpicture" id="Mini-molotov">
+                        <div class="workshop-entry-title">
+                            <h1>Mini-molotov</h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/mini-molotov.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>I made this suddenly.</p>
+                            <p>When a unknown girl asked me to go out with her, I took this thing.</p>
+                            <p>Just in case.</p>
+                        </div>
+                    </div> 
+                    <div class="workshop-entry-wpicture" id="Fake_charger">
+                        <div class="workshop-entry-title">
+                            <h1>Fake charger</h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/fake_charger.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>I saw a fake power socket in a cafe and thought, why not?.</p>
+                        </div>
+                    </div> 
+                    <div class="workshop-entry-wpicture" id="Taser">
+                        <div class="workshop-entry-title">
+                            <h1>Taser</h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/shocker.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>I once got a broken taser left for fixing.</p>
+                            <p>It had become my best weapon invention: I overcharged it to 1.5 times original voltage, affixed it on my belt and connected it to two chains.</p>
+                            <br>
+                            <p>I <a href="https://youtu.be/kPA3Kk2QPAk">presented</a> myself to various cosplay events with it, but I was never accepted for official showcase.</p>
+                            <br>
+                            <p>Once I did enter a cosplay gathering just outside the event building with it equipped.</p>
+                            <p>To my great disappointment, most people did not believe me.</p>
+                            <p>One lad, however, inquired more. I had shown him that this device indeed starts arcs of electric current.</p>
+                            <p>He never came close to me again.</p>
+                        </div>
+                    </div> 
+                    <div class="workshop-entry-wpicture" id="Portable_fan">
+                        <div class="workshop-entry-title">
+                            <h1>Portable fan</h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/portable_fan.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>Fan taken out of some old computer and accumulators. Nothing special.</p>
+                            <p>If anything, was rather nifty on one summer cosplay festival.</p>
+                        </div>
+                    </div> 
+                    <div class="workshop-entry-wpicture" id="D8">
+                        <div class="workshop-entry-title">
+                            <h1>D8</h1>     
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="/images/workshop/d8.png"/>
+                        </div>
+                        <div class="text-wrapper">
+                            <p>I decided to try making three-dimensional models all by myself. I learned OpenSCAD the hard way, but I managed to make all of the essential Dragons and Dungeons dies... except for D20.</p>
+                            <p>I used the little hospitality that HackerSpace had for me to print it.</p>
+                            <br>
+                            <p>Months later I gathered my courage and recalculated D20, finishing it. It was worth it – I am proud of the result.</p>
+                            <br>
+                            <p>I never got the ability to print them all - HackerSpace community was too hard for me to withstand and I myself have no fitting printer.</p>
+                            <p>I keep the die in my backpack. On rare occasions it comes to be useful - I once was honored by a lecturer as he took it to choose a student to answer by the chalkboard.</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
