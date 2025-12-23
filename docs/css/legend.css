@@ -1,6 +1,9 @@
 .entry-breaker{
     padding: 1%;
 }
+.entry-title p{
+    font-size: 18px;
+}
 .legend-wrapper{
     max-height: 100%;
 }

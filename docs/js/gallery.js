@@ -77,7 +77,7 @@ $(document).ready(function(){
         $("#bt-pic-bg").html(function(i, origText){
             var bits = $("#bt-pic-bg").text().split(" ");
             text = bits.pop();
-            if(text === "gray"){
+            if(text === "dark-gray"){
                 text = "black";
                 colorName = "black";
             }
@@ -87,10 +87,14 @@ $(document).ready(function(){
             }
             else if(text === "white"){
                 text = "gray";
+                colorName = "#A8ACB0";
+            }
+            else if(text === "gray"){
+                text = "dark-gray";
                 colorName = "#202020";
             }
             $("#picture-pane").css("background-color", colorName);
-            return "<a>Background: "+text+"</a>";
+            return "Background: "+text;
         });
     });
     $("#bt-prev").click(function(){
