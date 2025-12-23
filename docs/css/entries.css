@@ -23,10 +23,14 @@ p{
     padding:    5%;
 }
 .entry,
-.entry-wpicture{
+.entry-wpicture,
+.entry-simple{
     flex: 0 1 auto;
     width:          100%;
-    padding: 0%;
+
+}
+.entry,
+.entry-wpicture{
     grid-template-rows: auto auto;
 }
 .entry-wpicture{

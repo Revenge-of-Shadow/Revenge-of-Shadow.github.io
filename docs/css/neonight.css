@@ -54,15 +54,16 @@ a{
 .entry,
 .entry-wpicture,
 .entry-title{
-    background: #282828;
     border: 1px solid #444444;
+}
+.entry-title{
+    background: #282828;
 }
 #entry-list,
 #entries{
     background: #1A1A1A;
     border: 1px solid #444444;
 }
-.entry-breaker,
 .entry-breaker{
     background: #202020;
 }
