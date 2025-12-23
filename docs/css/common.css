@@ -36,11 +36,21 @@ img{
     grid-template-columns: 50% 50%;
 }
 
+.flexbox{
+    display:            flex;
+    flex-direction:     row;
+    flex-wrap:          nowrap;
+    justify-content:    space-around;
+    align-items:        center;
+}
 
 @media (max-width: 767px){
     .bisection{
         grid-template-columns: 100%;
         grid-template-rows: 50% 50%;
     }
-
+    .flexbox{
+        flex-direction: column;
+        flex-wrap:      wrap;
+    }
 }

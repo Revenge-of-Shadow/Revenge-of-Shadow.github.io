@@ -1,0 +1,12 @@
+
+@media (max-width: 767px){
+    .row1{
+        grid-row:   1;
+        overflow:   scroll;
+    }
+    .row2{
+        grid-row:   2;
+        overflow:   scroll;
+    }
+    
+}
