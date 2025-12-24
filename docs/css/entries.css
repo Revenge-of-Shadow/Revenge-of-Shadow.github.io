@@ -56,6 +56,7 @@ p{
     padding: 2%;
     width: 96%;
     max-height: 96%;
+    overflow-y: scroll;
 }
 #entry-list{
     overflow-y: scroll;
