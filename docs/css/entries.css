@@ -55,8 +55,7 @@ p{
 .text-wrapper,#entry-list{
     padding: 2%;
     width: 96%;
-    max-height: 96%;
-    overflow-y: scroll;
+    height: 100%;
 }
 #entry-list{
     overflow-y: scroll;
@@ -83,8 +82,6 @@ p{
         grid-template-rows: auto auto auto;
     }
     .text-wrapper{
-        min-height: 10%;
-        min-width: 100%;
         grid-row: 3;
     }
     .img-wrapper{
