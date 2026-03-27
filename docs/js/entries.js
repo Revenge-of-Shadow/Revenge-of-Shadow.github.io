@@ -1,5 +1,5 @@
 function update_image(topicid, index){
-    document.getElementById("entry-img-"+topicid).src = "/images/workshop/"+topicid+index+".png";
+    document.getElementById("entry-img-"+topicid).src = "/images/workshop/"+topicid+index+".jpg";
 }
 
 $(document).ready(function(){
